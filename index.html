@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Online Voting System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand logo-text" href="#">
+                NACOS | Computer Science
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Left Side Links -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Right Side Buttons -->
+                <div class="d-flex">
+                    <a href="#" class="btn btn-light me-2">Login</a>
+                    <a href="#" class="btn btn-outline-light">Register</a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <section class="hero-section py-5" style="background-color: #f4f9f6;">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT SIDE: IMAGE CAROUSEL -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+
+                            <!-- Image 1 -->
+                            <div class="carousel-item active">
+                                <img src="./image/nacos1.png" class="d-block w-100" alt="Secure Voting">
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="carousel-item">
+                                <img src="./image/aau.jpg" class="d-block w-100" alt="Online Election">
+                            </div>
+
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: TEXT CONTENT -->
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-4 fw-bold text-success">
+                        Secure Online Voting System
+                    </h1>
+                    <p class="lead">
+                        Empowering Departmental Elections by
+                        <strong>NACOS ELECOM</strong>
+                    </p>
+
+                    <p class="text-muted">
+                        A transparent, secure, and efficient digital platform designed
+                        to ensure integrity, confidentiality, and real-time election results.
+                    </p>
+
+                    <a href="#" class="btn btn-success btn-lg mt-3 px-4">
+                        Get Started
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+
+                    <span class="badge about-badge mb-3">
+                        ABOUT NACOS ELECOM
+                    </span>
+
+                    <h2 class="about-title">
+                        Secure & Transparent Online Voting Platform
+                    </h2>
+
+                    <p class="about-text">
+                        Our Secure Online Voting System is designed to modernize departmental elections
+                        by providing a reliable, transparent, and tamper-proof digital voting environment.
+                        The platform ensures that every vote remains confidential, authenticated, and accurately
+                        recorded.
+                    </p>
+
+                    <!-- FEATURES -->
+                    <div class="mt-4">
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-lock-fill"></i>
+                            </div>
+                            <div>
+                                <h6>Advanced Security</h6>
+                                <small>End-to-end encryption, role-based access control, and audit logging.</small>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+                            <div>
+                                <h6>Real-Time Results</h6>
+                                <small>Instant vote computation and transparent result publication.</small>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div>
+                                <h6>User Friendly</h6>
+                                <small>Simple interface that encourages maximum student participation.</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn btn-success about-btn mt-4">
+                        Learn More
+                    </a>
+
+                </div>
+
+                <!-- RIGHT SIDE IMAGE -->
+                <div class="col-lg-6 text-center">
+                    <div class="image-wrapper">
+                        <div class="image-bg"></div>
+                        <img src="./image/nacos1.png" class="about-image" alt="About NACOS Voting System">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works-section py-5" id="how">
+        <div class="container">
+
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">
+                    A secure and transparent 4-step election process.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- STEP 1 -->
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="step-number">01</div>
+                        <div class="process-icon">
+                            <i class="bi bi-person-plus-fill"></i>
+                        </div>
+                        <h5>Register</h5>
+                        <p>Students and candidates securely create accounts and verify identity.</p>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="step-number">02</div>
+                        <div class="process-icon">
+                            <i class="bi bi-journal-check"></i>
+                        </div>
+                        <h5>Nominate</h5>
+                        <p>Candidates submit nominations and campaign materials for approval.</p>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="step-number">03</div>
+                        <div class="process-icon">
+                            <i class="fa-solid fa-vote-yea"></i>
+                        </div>
+                        <h5>Vote</h5>
+                        <p>Eligible voters cast encrypted votes through the secure platform.</p>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="col-md-3">
+                    <div class="process-card text-center">
+                        <div class="step-number">04</div>
+                        <div class="process-icon">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </div>
+                        <h5>Results</h5>
+                        <p>Votes are counted automatically and published transparently.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">
+                    Have questions? Our team is ready to assist you.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="contact-card">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control custom-input" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control custom-input" placeholder="Your Email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea class="form-control custom-input" rows="5"
+                                    placeholder="Your Message"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success px-5 py-2">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <p class="mb-0">
+                &copy; 2024 NACOS Computer Science. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

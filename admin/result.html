@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Voting Results</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #0a7d2c;
+            --secondary: #f4f9f6;
+        }
+
+        /* Background */
+        body {
+            background: var(--secondary);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            height: 100vh;
+            background-color: var(--primary);
+            padding-top: 20px;
+            position: fixed;
+            width: 240px;
+            left: 0;
+            top: 0;
+        }
+
+        .sidebar a {
+            color: white;
+            padding: 12px 20px;
+            display: block;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar .active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* MAIN CONTENT SHIFTED */
+        .main-content {
+            margin-left: 240px;
+            padding: 40px;
+        }
+
+        /* Section title */
+        .section-title {
+            color: var(--primary);
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Card */
+        .result-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .result-card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* Circle */
+        .circle {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            position: relative;
+        }
+
+        .circle::before {
+            content: "";
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .circle span {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .candidate-name {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .vote-count {
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* Footer */
+        footer {
+            margin-left: 240px;
+            padding: 20px;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+
+            .main-content,
+            footer {
+                margin-left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h4 class="text-white text-center mb-4">NACOS Admin</h4>
+
+        <a href="dashborad.html">
+            <i class="fa-solid fa-gauge me-2"></i> Dashboard
+        </a>
+
+        <a href="form.html">
+            <i class="fa-solid fa-user-plus me-2"></i> Add Candidate
+        </a>
+
+        <a href="result.html" class="active">
+            <i class="fa-solid fa-chart-column me-2"></i> View Results
+        </a>
+
+        <a href="../logout.html">
+            <i class="fa-solid fa-right-from-bracket me-2"></i> Logout
+        </a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- PRESIDENT -->
+        <h4 class="section-title">President</h4>
+
+        <div class="row text-center">
+
+            <div class="col-md-6 mb-4">
+                <div class="result-card">
+                    <div class="circle" style="background: conic-gradient(var(--primary) 0% 70%, #e0e0e0 70% 100%);">
+                        <span>70%</span>
+                    </div>
+                    <div class="candidate-name">John Doe</div>
+                    <div class="vote-count">350 Votes</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="result-card">
+                    <div class="circle" style="background: conic-gradient(var(--primary) 0% 30%, #e0e0e0 30% 100%);">
+                        <span>30%</span>
+                    </div>
+                    <div class="candidate-name">Mary Smith</div>
+                    <div class="vote-count">150 Votes</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECRETARY -->
+        <h4 class="section-title mt-5">Secretary General</h4>
+
+        <div class="row text-center">
+
+            <div class="col-md-6 mb-4">
+                <div class="result-card">
+                    <div class="circle" style="background: conic-gradient(var(--primary) 0% 55%, #e0e0e0 55% 100%);">
+                        <span>55%</span>
+                    </div>
+                    <div class="candidate-name">David Paul</div>
+                    <div class="vote-count">220 Votes</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="result-card">
+                    <div class="circle" style="background: conic-gradient(var(--primary) 0% 45%, #e0e0e0 45% 100%);">
+                        <span>45%</span>
+                    </div>
+                    <div class="candidate-name">Grace Lee</div>
+                    <div class="vote-count">180 Votes</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 NACOS Computer Science | Election Result System
+    </footer>
+
+</body>
+
+</html>
